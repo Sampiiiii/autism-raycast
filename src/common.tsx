@@ -6,8 +6,6 @@ const command = `afplay "${environment.assetsPath + "/" + sound}"`;
 
 export function Shoot({ playSound }: { playSound: boolean }) {
   open("raycast://confetti");
-  console.log("Yippee! 🎉")
-  console.log(command)
 
   if (playSound) {
     exec(command, (error, stderr) => {
